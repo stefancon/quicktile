@@ -162,7 +162,7 @@ def make_winsplit_positions(columns):
     """
 
     # TODO: Plumb GravityLayout.__init__'s arguments into the config file
-    gvlay = GravityLayout()
+    gvlay = GravityLayout(0.025, 0.01)
     col_width = 1.0 / columns
     cycle_steps = tuple(round(col_width * x, 3)
                         for x in range(1, columns))
